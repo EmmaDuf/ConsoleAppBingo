@@ -118,7 +118,7 @@ namespace ConsoleAppBingo
                     return true;
                 }
                 _count = 0;
-                for(int i = 4; i < 25; i += 4)
+                for(int i = 5; i < 25; i += 4)
                 {
                     if(card.cardsquares[i].Pick == true) { _count++; }
                 }

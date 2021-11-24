@@ -37,6 +37,7 @@ namespace ConsoleAppBingo
             bool interested_user = true;
             while (interested_user)
             {
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("1) Simulate a game");
                 Console.WriteLine("2) Create your own game");
                 Console.WriteLine("Pick an option or press q to stop playing");
@@ -73,6 +74,7 @@ namespace ConsoleAppBingo
                         {
                             PrintCard(card);
                         }
+                        Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine("Game Completed!");
                         Console.WriteLine("Would you like to continue with Bingo? Input yes or q to quit.");
                         string user_input = Console.ReadLine();
@@ -136,7 +138,6 @@ namespace ConsoleAppBingo
                         {
                             interested_user = false;
                         }
-                        
                     }
                 }
                 else { interested_user=false;}    
